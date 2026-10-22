@@ -21,6 +21,7 @@
 // static method is stored in heap mem
 // static method in class does not need to called by obj
 
+
 public class Launchstatic
 {
     static int a;
