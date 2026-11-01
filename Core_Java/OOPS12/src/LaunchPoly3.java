@@ -1,17 +1,16 @@
-class AeroPlane2
+abstract class AeroPlane2
 {
-    public void takingOff()
+    public AeroPlane2()
     {
-        System.out.println("takeoff");
+        System.out.println("AeroPlane2 Constructor");
     }
-    public void fly()
-    {
-        System.out.println("Aeroplane is flying");
-    }
-    public void landing()
-    {
-        System.out.println("landing");
-    }
+    //abstract int age;
+    public abstract void takingOff();
+
+    public abstract void fly();
+
+    public abstract void landing();
+
 }
 class CargoPlane2 extends AeroPlane2
 {
@@ -71,6 +70,7 @@ public class LaunchPoly3
 {
     public static void main(String[] args)
     {
+        //AeroPlane2 ar=new AeroPlane2() ;// we cannot create instance of abstract class
         CargoPlane2 cp=new CargoPlane2();
 
         FighterPlane2 fp=new FighterPlane2();
